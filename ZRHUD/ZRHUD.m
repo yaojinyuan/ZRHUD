@@ -31,10 +31,7 @@ static NSTimer *fadeOutTimer;
 //定位成功提示
 +(void)SuccessSuggestion:(NSString *)message
 {
-    //    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    //    [self showWindow];
-    
-    
+
     [fadeOutTimer invalidate];
     fadeOutTimer = nil;
     
@@ -89,7 +86,6 @@ static NSTimer *fadeOutTimer;
                          if(suggestionView.alpha == 0) {
                              [suggestionView removeFromSuperview];
                              suggestionView = nil;
-                             // collectBtn.enabled = YES;
                          }
                      }];
 }
